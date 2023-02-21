@@ -6,10 +6,10 @@
 
     .sideIconsCustom{
         @apply relative flex items-center justify-center 
-        h-12 w-12 mt-2 mb-2 mx-auto 
-        bg-gray-800 hover:text-green-500 hover:bg-gray-600 
+        h-14 w-14 mt-2 mb-2 mx-auto 
+        bg-gray-800 hover:text-green-500 hover:bg-gray-600 cursor-pointer
         rounded-3xl hover:rounded-xl
-        transition-all duration-100 ease-linear;
+        transition-all duration-100 ease-linear hover:animate-pulse;
     }
     .tooltip {
         @apply absolute w-auto p-2 m-2 min-w-max left-14 rounded-md shadow-md
