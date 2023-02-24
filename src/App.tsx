@@ -1,17 +1,16 @@
+// React imports
 import React from 'react';
-import Items from './components/Items';
-import Player from './components/Player';
-import NavLeft from './components/NavLeft';
-import NavBottom from './components/NavBottom';
-import NavTop from './components/NavTop';
+import { useEffect } from 'react';
+
+// UI component imports
+import TestDisplay from './components/TestDisplay';
+import ClassSelect from './components/ClassSelect';
 
 function App() {
   return (
     <div className="App bg-gradient-to-b from-indigo-900 to-black h-screen w-screen">
       <header className="App-header">
-        <NavLeft />
-        <NavBottom />
-        <NavTop />
+        <ClassSelect />
       </header>
     </div>
   );

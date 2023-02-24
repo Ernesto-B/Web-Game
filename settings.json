@@ -1,0 +1,9 @@
+{
+    "gameplay": {
+        "dmg-multiplier": 1.0,
+        "encounter-rate": 1.0,
+        "exp-multiplier": 1.0,
+        "gold-multiplier": 1.0,
+        "item-drop-rate": 1.0
+    }
+}

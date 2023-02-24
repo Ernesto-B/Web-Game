@@ -2,14 +2,20 @@ import React from 'react'
 import { useState } from 'react'
 import { GiBigGear as Settings, GiDirectorChair as Credits } from 'react-icons/gi'
 import { IoMdReorder as Menu } from 'react-icons/io'
+import ClassSelect from './ClassSelect'
 
-export default function NavTop() {
+export default function NavTop(props:any) {
 
     const [showDropdown, toggleDropdown] = useState(false)
 
   return (
     <div>
       
+      {props.classSelect && <div>
+        
+      </div>}  
+
+
     </div>
   )
 }
