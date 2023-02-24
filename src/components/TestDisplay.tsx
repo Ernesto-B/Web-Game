@@ -1,4 +1,7 @@
+// React imports
 import React from 'react'
+
+// Game component imports
 import Player from '../game components/Player'
 
 export default function TestDisplay() {

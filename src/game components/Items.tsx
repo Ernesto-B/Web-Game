@@ -1,7 +1,8 @@
+// React imports
 import React from 'react'
 
 export default function Items() {
-    // CODE HERE
+
 
   return (
     <div className='hidden'>

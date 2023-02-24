@@ -1,8 +1,9 @@
+// React imports
 import React, { useState } from 'react'
 import { useEffect } from 'react';
+
+// Game component imports
 import Items from './Items'
-
-
 
 export default function Player() {
 

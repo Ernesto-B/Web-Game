@@ -1,14 +1,16 @@
+// React imports
 import React from 'react'
 import { useState, useEffect } from 'react';
+
+// Game icon imports
 // Icons are from https://react-icons.github.io/react-icons/icons?name=gi
 import { GiBattleGear as Inventory, GiBladeDrag as Attack, GiBrokenHeart as Heart, GiBurningBook as Ability, GiTreasureMap as Map, GiChaingun as Upgrade, GiBlackBook as Save } from 'react-icons/gi'
-import ClassSelect from './ClassSelect'
 
 export default function NavLeft(props:any) {
 
   return (
     <div>
-        {props.classSelect && <div className="fixed top-0 h-screen w-20 m-0 flex flex-col bg-gray-900 text-white shadow-lg border-2 border-black">
+        {props.classSelect[0] && <div className="fixed top-0 h-screen w-20 m-0 flex flex-col bg-gray-900 text-white shadow-lg border-2 border-black">
             <div className='sideIconsCustom group'>
                 <Heart size="35"/>
                 <span className='tooltip group-hover:scale-100'>'Healthy foods or something'</span>

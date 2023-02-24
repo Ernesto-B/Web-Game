@@ -7,7 +7,7 @@ import NavLeft from './NavLeft';
 import NavBottom from './NavBottom';
 import NavTop from './NavTop';
 
-// Game Icon imports
+// Game icon imports
 import { GiBlackKnightHelm as KnightIcon, GiHood as AssasinIcon, GiHealing as HealerIcon } from "react-icons/gi";
 import { FaHatWizard as MageIcon } from "react-icons/fa";
 
@@ -43,7 +43,7 @@ export default function ClassSelect(props:any) {
     <div className='overflow-hidden'>
         {!classSelect && <div id='background-opacity' className="opacity-60 w-screen h-screen bg-black overflow-hidden">
             <div id='select-class-menu' className="absolute flex flex-col items-center h-2/3 w-1/2 right-1/4 top-20 p-2 bg-gray-800 rounded-xl border-2 border-white">
-                <h1 id='header' className="text-white text-3xl mb-3">Choose A Class</h1>
+                <h1 id='select-class-menu-header' className="text-white text-3xl mb-3">Choose A Class</h1>
 
                 <div id='class-cards-container' className="flex justify-evenly h-full w-full">
 
@@ -159,10 +159,10 @@ export default function ClassSelect(props:any) {
             </div>
         </div>}
 
-        
-        <NavLeft classSelect={classSelect}/>
-        <NavBottom classSelect={classSelect}/>
-        <NavTop classSelect={classSelect}/>
+        {/* Call the Player component from any of the following */}
+        <NavLeft classSelect={[classSelect, className]}/>
+        <NavBottom classSelect={[classSelect, className]}/>
+        <NavTop classSelect={[classSelect, className]}/>
     </div>
   )
 }
