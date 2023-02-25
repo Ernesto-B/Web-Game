@@ -11,7 +11,7 @@ export default function Goblin() {
         baseDMG: 3,
         ability1: 'Slash',
         ability2: 'Steal',
-        ability3: 'Rape',
+        ability3: 'Clobber',
     })
     
 

@@ -13,7 +13,7 @@ export default function NavTop(props:any) {
   return (
     <div>
       
-      {props.classSelect && <div>
+      {props.parentProperties && <div>
         
       </div>}  
 

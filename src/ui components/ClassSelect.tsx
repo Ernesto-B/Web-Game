@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react'
 import NavLeft from './NavLeft';
 import NavBottom from './NavBottom';
 import NavTop from './NavTop';
+import TextBox from './TextBox';
 
 // Game icon imports
 import { GiBlackKnightHelm as KnightIcon, GiHood as AssasinIcon, GiHealing as HealerIcon } from "react-icons/gi";
@@ -16,6 +17,8 @@ import Knight from '../game components/classes/Knight';
 import Mage from '../game components/classes/Mage';
 import Healer from '../game components/classes/Healer';
 import Assasin from '../game components/classes/Assasin';
+import Player from '../game components/Player';
+import Dices from './Dice';
 
 export default function ClassSelect(props:any) {
     const [classSelect, setClassSelect] = useState(false);
@@ -35,7 +38,6 @@ export default function ClassSelect(props:any) {
     function handleClassClick(className:string){
         setClassSelect(!classSelect);
         setClassName(className);
-        console.log(className);
     }
 
 
@@ -160,9 +162,12 @@ export default function ClassSelect(props:any) {
         </div>}
 
         {/* Call the Player component from any of the following */}
-        <NavLeft classSelect={[classSelect, className]}/>
-        <NavBottom classSelect={[classSelect, className]}/>
-        <NavTop classSelect={[classSelect, className]}/>
+        <NavLeft parentProperties={[classSelect, className]}/>
+        <NavBottom parentProperties={[classSelect, className]}/>
+        <NavTop parentProperties={[classSelect, className]}/>
+        <TextBox parentProperties={[classSelect, className]}/>
+        <Dices parentProperties={classSelect}/>
+        <Player parentProperties={[classSelect, className]}/>
     </div>
   )
 }

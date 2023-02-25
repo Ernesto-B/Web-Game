@@ -10,7 +10,7 @@ export default function NavLeft(props:any) {
 
   return (
     <div>
-        {props.classSelect[0] && <div className="fixed top-0 h-screen w-20 m-0 flex flex-col bg-gray-900 text-white shadow-lg border-2 border-black">
+        {props.parentProperties[0] && <div className="fixed top-0 h-screen w-20 m-0 flex flex-col bg-gray-900 text-white shadow-lg border-2 border-black">
             <div className='sideIconsCustom group'>
                 <Heart size="35"/>
                 <span className='tooltip group-hover:scale-100'>'Healthy foods or something'</span>

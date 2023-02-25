@@ -4,8 +4,18 @@ import { useEffect } from 'react';
 
 // Game component imports
 import Items from './Items'
+import Knight from '../game components/classes/Knight';
+import Mage from '../game components/classes/Mage';
+import Healer from '../game components/classes/Healer';
+import Assasin from '../game components/classes/Assasin';
 
-export default function Player() {
+
+export default function Player(props:any) {
+
+    const knight = Knight();
+    const mage = Mage();
+    const healer = Healer();
+    const assasin = Assasin();
 
     const [stats, setStats] = useState({
         class : 'None',
@@ -19,19 +29,35 @@ export default function Player() {
         ability4: 'None'
     });
 
+    // Change health
+    function changeHealth(value:number):any{
+        setStats({
+            ...stats,
+            health: value
+        })
+    }
+    // Change level
+    function changeLevel(value:number):any{
+        setStats({
+            ...stats,
+            level: value  
+        })
+    }
+    // Change EXP
+    function changeEXP(value:number):any{
+        setStats({
+            ...stats,
+            EXP: value  
+        })
+    }
+
+
     const [togglePlayer, setTogglePlayer] = useState(false);
+
     
 
   return (
-    <div className="flex justify-center"> 
-
-        {!togglePlayer && <button className="flex justify-center text-3xl bg-transparent text-white hover:bg-red-400 border-2 rounded">
-            Select Class
-        </button>}
-
-        {togglePlayer && <div id='Show-player-stats'>
-            something
-        </div>}
+    <div> 
 
     </div>
   )

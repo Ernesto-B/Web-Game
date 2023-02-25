@@ -18,7 +18,7 @@ export default function NavBottom(props:any) {
 
   return (
     <div>
-        {props.classSelect[0] && <div className='flex bottom-0 w-screen'>
+        {props.parentProperties[0] && <div className='flex bottom-0 w-screen'>
 
             <div id='up-arrow' className="absolute flex justify-center w-screen bottom-[30px] text-white hover:text-green-500 cursor-pointer animate-bounce" onClick={handleArrowClick}>
                 <IoIosArrowUp size="35" />

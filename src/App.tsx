@@ -1,17 +1,18 @@
 // React imports
-import React from 'react';
-import { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 
 // UI component imports
-import TestDisplay from './components/TestDisplay';
-import ClassSelect from './components/ClassSelect';
+import ClassSelect from './ui components/ClassSelect';
+import Dices from './ui components/Dice';
+
+
 
 function App() {
+  
+
   return (
     <div className="App bg-gradient-to-b from-indigo-900 to-black h-screen w-screen">
-      <header className="App-header">
         <ClassSelect />
-      </header>
     </div>
   );
 }
